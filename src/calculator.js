@@ -27,7 +27,8 @@ export class Calculator{
     return Math.round(10*tempNum)/10;    
   }
 
-
+  //lifestyle, healthcare, and activity are handles as integers.
+  //numbers 1-4: where 1 is the healthiest attribute, and 4 is the least healthy
   lifeExpectancyEarth(lifestyle, healthcare, activity){
     let expectedAge = 0;
     let array = [lifestyle, healthcare, activity];
