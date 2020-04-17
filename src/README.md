@@ -16,7 +16,8 @@ _This site should calculate the users age based on the a planets solar year._
 This application will follow a the Test Driven Developement method. Each spec below will have a corresponding test with an expected outcome.
 
 * Return the user's age in Mercury years.
-* Return the user's age in Venus years
+* Return the user's age in Venus years.
+* Return the user's age in Mars years.
 
 
 
