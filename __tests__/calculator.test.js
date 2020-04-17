@@ -3,9 +3,15 @@ import { Calculator } from '../src/calculator';
 describe('Planet Age Calculation', () => {
   let age;
   let calc;
+  let lifestyle;
+  let healthCare;
+  let activity;
   beforeEach(() => {
     age = 24;
     calc = new Calculator(age);
+    lifestyle = 1;
+    healthCare = 1;
+    activity = 1;    
   });
   test("Accurately calculates age in Mercury years.", () => {
     expect(calc.mercury(age)).toEqual(100);
@@ -22,22 +28,7 @@ describe('Planet Age Calculation', () => {
   test("Accurately calculates age in Jupiter years.", () => {
     expect(calc.jupiter(age)).toEqual(2);
   })
-});
-
-describe('Life Expectation Calculations', () =>{
-  let age;
-  let calc;
-  let lifestyle;
-  let healthCare;
-  let activity;
-  beforeEach(() =>{
-    age = 24;
-    calc = new Calculator(age);
-    lifestyle = 1;
-    healthCare = 1;
-    activity = 1;
-  })
   test("Accurately calculates life expectancy in Earth years.", () => {
     expect(calc.lifeExpectancy(lifestyle, healthCare, activity)).toEqual(1);
   })
-})
+});
