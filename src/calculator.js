@@ -4,12 +4,12 @@ export class Calculator{
   }
 
   mercury(){
-    this.age = (.24 / this.age);
+    this.age = (this.age / .24);
     return this.age;
   }
 
   venus(){
-    this.age = (.64 / this.age);
+    this.age = (this.age / .64);
     return this.age;
   }
 }
