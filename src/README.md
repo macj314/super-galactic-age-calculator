@@ -16,13 +16,7 @@ _This site should calculate the users age based on the a planets solar year._
 This application will follow a the Test Driven Developement method. Each spec below will have a corresponding test with an expected outcome.
 
 * Return the age in Mercury years.
-* Return the age in Venus years
-* Return the age in Mars years
-* Return the age in Jupiter years.
 
-* Determine how many years the user has left to live on any of the above planets.
-
-* If the user has surpassed their life expectancy, return the number of years they've lived past that date.
 
 
 
