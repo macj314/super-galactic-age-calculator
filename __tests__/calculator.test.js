@@ -1,14 +1,16 @@
 import { Calculator } from '../src/calculator';
-import $ from 'jquery';
 
-describe('', () => {
-  let age = $("#input-age");
+describe('Calculator', () => {
+  let age;
+  let calc;
 
   beforeEach(() => {
-    calc = new Calculator();
+    //Please enter your age in the line below.
+    age = 24;
+    calc = new Calculator(age);
   });
 
   test("Accurately calculates age in Mercury years.", () => {
-    expect(calc.mercury(age).toEqual(.24 / age));
+    expect(calc.mercury(age)).toEqual(.24 / age);
   })
 });
