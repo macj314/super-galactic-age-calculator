@@ -37,5 +37,9 @@ describe('Planet Age Calculation Tests', () => {
   test("Accurately calculates life expectancy in Earth years.", () => {
     expect(calc.lifeExpectancyEarth(lifestyle, healthCare, activity)).toEqual(99);
   })
+
+  test("Accurately calculates life expectancy on all planets in years.", () => {
+    expect(calc.lifeExpectancy(lifestyle, healthCare, activity)).toEqual(99);
+  })
   });
 });
