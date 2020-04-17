@@ -28,7 +28,7 @@ describe('Planet Age Calculation Tests', () => {
     let lifestyle;
     let healthCare;
     let activity;
-    const expected = [expect.stringMatching(/fail/)];
+    const expected = [expect.stringMatching(/cong/)];
     beforeEach(() => {
       lifestyle = 1;
       healthCare = 1;
