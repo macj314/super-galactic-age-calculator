@@ -29,6 +29,6 @@ describe('Planet Age Calculation', () => {
     expect(calc.jupiter(age)).toEqual(2);
   })
   test("Accurately calculates life expectancy in Earth years.", () => {
-    expect(calc.lifeExpectancy(lifestyle, healthCare, activity)).toEqual(1);
+    expect(calc.lifeExpectancy(lifestyle, healthCare, activity)).toEqual(3);
   })
 });
