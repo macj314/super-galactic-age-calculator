@@ -25,16 +25,18 @@ export class Calculator{
 
 
   lifeExpectancy(lifestyle, healthcare, activity){
-    let expectedAge;
+    let expectedAge = 0;
     let array = [lifestyle, healthcare, activity];
-    for(var i = 0; i < array.length;){
+    for(var i = 0; i < array.length; i++){
       if(array[i] === 1){
-        expectedAge += 33;
+        expectedAge += 1;
       }else if(array[i] === 2){
-        expectedAge += 25;
+        expectedAge += 2;
       }else if(array[i] === 3){
-        expectedAge += 18;
-      }else expectedAge += 13;      
+        expectedAge += 3;
+      }else{
+        expectedAge += 4;   
+      }  
     }
     return expectedAge;
   }
