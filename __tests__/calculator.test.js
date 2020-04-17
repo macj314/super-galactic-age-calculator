@@ -5,7 +5,7 @@ describe('Planet Age Calculation Tests', () => {
   let calc;
   beforeEach(() => {
     age = 24;
-    calc = new Calculator(age);
+    calc = new Calculator();
   });
 
   test("Accurately calculates age in Mercury years.", () => {
@@ -28,7 +28,7 @@ describe('Planet Age Calculation Tests', () => {
     let lifestyle;
     let healthCare;
     let activity;
-    const expected = [expect.stringMatching(/cong/)];
+    const expected = [expect.stringMatching(/Cong/)];
     beforeEach(() => {
       lifestyle = 1;
       healthCare = 1;

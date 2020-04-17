@@ -1,30 +1,23 @@
 export class Calculator{
-  constructor(age){
-    this.age = age;
+
+  mercury(age){
+    age /= .24;
+    return Math.round(10*age)/10;
   }
 
-  mercury(){
-    let tempNum;
-    tempNum = (this.age / .24);
-    return Math.round(10*tempNum)/10;
+  venus(age){
+    age /= .64;
+    return Math.round(10*age)/10;
   }
 
-  venus(){
-    let tempNum;
-    tempNum = (this.age / .64);
-    return Math.round(10*tempNum)/10;
+  mars(age){
+    age /= 1.88;
+    return Math.round(10*age)/10;
   }
 
-  mars(){
-    let tempNum;
-    tempNum = (this.age / 1.88);
-    return Math.round(10*tempNum)/10;
-  }
-
-  jupiter(){
-    let tempNum;
-    tempNum = (this.age / 11.86);
-    return Math.round(10*tempNum)/10;    
+  jupiter(age){
+    age /= 11.86;
+    return Math.round(10*age)/10;    
   }
 
   //lifestyle, healthcare, and activity are handles as integers.
@@ -60,8 +53,7 @@ export class Calculator{
         expectedAge += 10;   
       }
     }
-    this.age = expectedAge;
-    array = [this.mercury(), this.venus(), expectedAge, this.mars(), this.jupiter()];
+    array = [this.mercury(expectedAge), this.venus(expectedAge), expectedAge, this.mars(expectedAge), this.jupiter(expectedAge)];
     return array;
   }
 
