@@ -30,22 +30,22 @@ describe('Planet Age Calculation Tests', () => {
     let activity;
     const expected = [expect.stringMatching(/Cong/)];
     beforeEach(() => {
-      lifestyle = 1;
-      healthCare = 1;
-      activity = 1;
+      lifestyle = 4;
+      healthCare = 4;
+      activity = 4;
     });
 
   test("Accurately calculates life expectancy in Earth years.", () => {
-    expect(calc.lifeExpectancyEarth(lifestyle, healthCare, activity)).toEqual(99);
+    expect(calc.lifeExpectancyEarth(lifestyle, healthCare, activity)).toEqual(6);
   })
 
   test("Accurately calculates life expectancy on all planets in years.", () => {
-    expect(calc.lifeExpectancy(lifestyle, healthCare, activity)).toEqual([412.5, 154.7, 99, 52.7, 8.3]);
+    expect(calc.lifeExpectancy(lifestyle, healthCare, activity)).toEqual([25, 9.4, 6, 3.2, .5]);
   })
 
   test("Should display years lived past life expectancy.", () => {
     let array = calc.lifeExpectancy(lifestyle, healthCare, activity);
-    expect(calc.pastExpectancy(array)).toEqual(
+    expect(calc.pastExpectancy(array, age)).toEqual(
       expect.arrayContaining(expected),
     );
   })

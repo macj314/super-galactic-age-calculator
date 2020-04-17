@@ -33,7 +33,7 @@ export class Calculator{
       }else if(array[i] === 3){
         expectedAge += 18;
       }else{
-        expectedAge += 10;   
+        expectedAge += 2;   
       }
     }
     return expectedAge;
@@ -50,22 +50,22 @@ export class Calculator{
       }else if(array[i] === 3){
         expectedAge += 18;
       }else{
-        expectedAge += 10;   
+        expectedAge += 2;   
       }
     }
     array = [this.mercury(expectedAge), this.venus(expectedAge), expectedAge, this.mars(expectedAge), this.jupiter(expectedAge)];
     return array;
   }
 
-  pastExpectancy(array){
-    let earthExp = array[2];
+  pastExpectancy(array, age){
+    let currentAge = [this.mercury(age), this.venus(age), age, this.mars(age), this.jupiter(age)];
     let planetArray = ["Mercury", "Venus", "Earth", "Mars", "Jupiter"];
     let returnArray = [];
     for(let i = 0; i <= array.length; i++){
-      if(earthExp - array[i] > 0){
-        returnArray.push("Congratulations! You've lived " + (earthExp - array[i]) 
+      if(currentAge[i] - array[i] > 0){
+        returnArray.push("Congratulations! You've lived " + (currentAge[i] - array[i]) 
         + " years longer than expected on " + planetArray[i] + ".");
-      }
+      } else returnArray.push(planetArray[i] + " Not older")
     }
     return returnArray;
   }
