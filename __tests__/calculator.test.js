@@ -20,4 +20,8 @@ describe('Calculator', () => {
   test("Accurately calculates age in Mars years.", () => {
     expect(calc.mars(age)).toEqual(12.8);
   })
+
+  test("Accurately calculates age in Jupiter years.", () => {
+    expect(calc.jupiter(age)).toEqual(1);
+  })
 });

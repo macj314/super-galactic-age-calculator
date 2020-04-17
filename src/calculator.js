@@ -17,4 +17,9 @@ export class Calculator{
     this.age = (this.age / 1.88);
     return Math.round(10*this.age)/10;
   }
+
+  jupiter(){
+    this.age = (this.age / 11.86);
+    return Math.round(10*this.age)/10;    
+  }
 }
