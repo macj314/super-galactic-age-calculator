@@ -64,4 +64,17 @@ export class Calculator{
     array = [this.mercury(), this.venus(), expectedAge, this.mars(), this.jupiter()];
     return array;
   }
+
+  pastExpectancy(array){
+    let earthExp = array[2];
+    let planetArray = ["Mercury", "Venus", "Earth", "Mars", "Jupiter"];
+    let returnArray = [];
+    for(let i = 0; i <= array.length; i++){
+      if(earthExp - array[i] > 0){
+        returnArray.push("Congratulations! You've lived " + (earthExp - array[i]) 
+        + " years longer than expected on " + planetArray[i] + ".");
+      }
+    }
+    return returnArray;
+  }
 }
