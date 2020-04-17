@@ -18,6 +18,9 @@ This application will follow a the Test Driven Developement method. Each spec be
 * Return the user's age in Mercury years.
 * Return the user's age in Venus years.
 * Return the user's age in Mars years.
+* Return the user's age in Jupiter years.
+
+* Calculate user's life expetancy on each planet based on: lifestyle, access to healthcare, and level of physical activity.
 
 
 
