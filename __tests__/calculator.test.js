@@ -6,7 +6,7 @@ describe('Calculator', () => {
 
   beforeEach(() => {
     //Please enter your age in the line below.
-    age = l;
+    age = 24;
     calc = new Calculator(age);
   });
 
