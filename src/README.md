@@ -22,7 +22,7 @@ This application will follow a the Test Driven Developement method. Each spec be
 
 * Calculate user's life expetancy on each planet based on: lifestyle, access to healthcare, and level of physical activity.
 
-
+* If the user has lived past their life expectancy: then tell them the amount of years they've lived past it.
 
 ## Setup/Installation Requirements
 
